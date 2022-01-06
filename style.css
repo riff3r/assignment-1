@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", "Yeseva One", "Lobster", cursive, sans-serif;
+}
+
+/* Headline */
+h1 {
+  font-size: 60px;
+  font-family: "Yeseva One", cursive;
+  color: #333333;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #13103a;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: bolder;
+  line-height: 1.5;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Utility */
+.text-center {
+  text-align: center;
+}
+
+.margin-bot-75 {
+  margin-bottom: 75px;
+}
+
+.img-full-width {
+  width: 100%;
+}
+
+/* Color */
+
+.primary {
+  color: #27ae60;
+}
+
+/* Button */
+.btn {
+  color: white;
+  background-image: linear-gradient(45deg, #de6262, #ffb88c);
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-image: linear-gradient(90deg, #de6262, #ffb88c);
+}
+.btn:active {
+  transform: translateY(-3px);
+}
+/* Layout */
+
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+/* Banner Section */
+.banner {
+  padding-top: 100px;
+}
+
+.banner__text {
+  padding-top: 50px;
+}
+
+.banner__text h1 {
+  padding-left: 20px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  position: relative;
+}
+.banner__text h1::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  height: 118px;
+  width: 5px;
+  border-left: 5px solid;
+  border-image: linear-gradient(180deg, #de6262, #ffb88c) 1 100%;
+}
+.banner__text P {
+  font-size: 18px;
+  line-height: 2;
+}
+.banner__text a {
+  margin: 20px 0;
+}
+
+.banner__img {
+  text-align: right;
+}
+.banner__img img {
+  width: 80%;
+}
+
+/* Mission Section */
+
+.mission .display-flex {
+  gap: 30px;
+}
+
+.card {
+  padding: 40px 35px;
+  border-radius: 30px;
+  transition: 500ms;
+}
+
+/* .card:hover {
+  transform: translateY(-5px);
+} */
+
+.card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.mission .card img {
+  width: 100px;
+}
+
+.card--paste {
+  background-color: rgba(79, 157, 166, 0.1);
+}
+
+.card--red {
+  background-color: rgba(255, 89, 89, 0.1);
+}
+
+.card--offwhite {
+  background-color: rgba(255, 244, 214);
+}
+
+/* Develop */
+
+.cta-section {
+  gap: 50px;
+  position: relative;
+}
+
+.cta-section p {
+  line-height: 2;
+  margin-bottom: 25px;
+}
+
+.cta-section__text {
+  padding-top: 50px;
+}
+
+.cta-section::before {
+  content: "";
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  background: url(images/shapes/shape-1.png) no-repeat;
+  background-size: 250px 250px;
+  z-index: -1;
+}
+
+#cta-1::before {
+  top: 25%;
+  left: -9%;
+}
+#cta-2::before {
+  top: 70%;
+  right: -9%;
+}
+
+/* work */
+
+.learn .card img {
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  color: gainsboro;
+  background-color: #0b0d17;
+  padding: 40px 0;
+}
+
+#footer-heading {
+  color: white;
+  font-size: 36px;
+  letter-spacing: 3px;
+  font-family: "Lobster", cursive;
+}
